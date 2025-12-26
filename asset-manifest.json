@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/restoran-sh-/static/css/main.ada29be2.css",
+    "main.js": "/restoran-sh-/static/js/main.6b347b76.js",
+    "static/js/453.fd511d1a.chunk.js": "/restoran-sh-/static/js/453.fd511d1a.chunk.js",
+    "static/media/jpg": "/restoran-sh-/static/media/90a8402160702292a3b83f117b31980f.e21c64cfbc2e0975fff6.jpg",
+    "index.html": "/restoran-sh-/index.html",
+    "main.ada29be2.css.map": "/restoran-sh-/static/css/main.ada29be2.css.map",
+    "main.6b347b76.js.map": "/restoran-sh-/static/js/main.6b347b76.js.map",
+    "453.fd511d1a.chunk.js.map": "/restoran-sh-/static/js/453.fd511d1a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ada29be2.css",
+    "static/js/main.6b347b76.js"
+  ]
+}
