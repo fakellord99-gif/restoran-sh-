@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+# 🍝 Теплый Вечер - Итальянский Ресторан
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Веб-сайт итальянского ресторана с полным функционалом заказа, доставки и системой лояльности.
 
-## Available Scripts
+## 🌟 Основные возможности
 
-In the project directory, you can run:
+### Для клиентов:
+- 🍕 **Меню** - 42 блюда итальянской кухни (пицца, паста, десерты, вина, кофе, лимончелло)
+- 🛒 **Корзина** - добавление блюд с контролем количества
+- 🚚 **Доставка** - интеграция с Яндекс.Картами, выбор адреса
+- 👤 **Профиль пользователя** - личная информация, история заказов
+- 🎁 **Бонусная программа** - 4 уровня (Bronze, Silver, Gold, Platinum)
+- 📊 **Статистика** - отслеживание заказов и бонусов
+- 📅 **Бронирование** столиков
 
-### `npm start`
+### Для администраторов:
+- 📈 **Админ панель** - статистика выручки, заказов, броней
+- 👥 **Управление пользователями**
+- 📦 **Управление заказами** - изменение статусов
+- 🗓️ **Управление бронями**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Запуск проекта
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Установка зависимостей:
+```bash
+npm install
+```
 
-### `npm test`
+### Запуск в режиме разработки:
+```bash
+npm start
+```
+Откройте [http://localhost:3000](http://localhost:3000) в браузере.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Сборка для production:
+```bash
+npm run build
+```
 
-### `npm run build`
+## 🔐 Тестовые учетные записи
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Администратор:
+- **Email:** admin@restaurant.ru
+- **Пароль:** admin123
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Пользователь:
+- **Email:** user@example.ru
+- **Пароль:** user123
+- **Бонусы:** 1250 баллов (уровень Silver 🥈)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💎 Система лояльности
 
-### `npm run eject`
+- 🥉 **Bronze** - 0-999 баллов
+- 🥈 **Silver** - 1000-2999 баллов
+- 🥇 **Gold** - 3000-4999 баллов
+- 💎 **Platinum** - 5000+ баллов
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Начисление:** 5% от суммы каждого заказа  
+**Использование:** 1 бонус = 1 рубль
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Технологии
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **React** - фронтенд фреймворк
+- **React Icons** - иконки
+- **Yandex Maps API** - карты для доставки
+- **localStorage** - имитация базы данных
+- **CSS3** - стилизация и анимации
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📁 Структура проекта
 
-## Learn More
+```
+restoran-sh/
+├── public/              # Статические файлы
+├── src/
+│   ├── components/      # React компоненты
+│   │   ├── About.js
+│   │   ├── Menu.js
+│   │   ├── Delivery.js
+│   │   ├── Profile.js
+│   │   ├── AdminPanel.js
+│   │   └── ...
+│   ├── services/        # Сервисы
+│   │   └── database.js  # Работа с localStorage
+│   ├── img/            # Изображения меню
+│   ├── App.js          # Главный компонент
+│   └── index.css       # Глобальные стили
+├── README.md
+└── package.json
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📝 Основные компоненты
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Header** - навигация, корзина
+- **Menu** - отображение блюд по категориям
+- **Checkout** - оформление заказа
+- **Delivery** - выбор адреса доставки на карте
+- **Profile** - профиль пользователя с бонусами
+- **AdminPanel** - панель администратора
+- **Login/Register** - авторизация и регистрация
 
-### Code Splitting
+## 🔒 Безопасность
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+⚠️ **Внимание:** Это демо-проект для обучения.  
+В production необходимо:
+- Использовать настоящую БД (MySQL, PostgreSQL, MongoDB)
+- Хешировать пароли (bcrypt)
+- Использовать JWT токены
+- Добавить HTTPS
+- Валидацию на сервере
+- Защиту от XSS и SQL-injection
 
-### Analyzing the Bundle Size
+## 📧 Контакты
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Ресторан "Теплый Вечер"  
+📍 Москва, ул. Примерная, д. 1  
+📞 +7 (999) 123-45-67  
+✉️ info@tepliy-vecher.ru
 
-### Making a Progressive Web App
+## 📄 Лицензия
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+MIT License
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Сделано с ❤️ для практики веб-разработки**
